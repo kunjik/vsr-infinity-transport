@@ -12,24 +12,32 @@
   --soft-blue: #eaf3ff;
   --shadow: 0 20px 55px rgba(16, 32, 51, 0.12);
 }
-
+/* backtotop */
 #backToTopBtn {
-  display: none; /* Shuru mein chupa rahega */
+  display: none; 
   position: fixed;
-  bottom: 20px;
+  bottom: 90px; /* WhatsApp ke upar shift karne ke liye */
   right: 20px;
   z-index: 99;
-  background-color: #007bff; /* Aap apne theme ke hisaab se color badal sakte hain */
+  background-color: #007bff; /* Aap color change kar sakte hain */
   color: white;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px; /* Arrow ko center me rakhne ke liye */
+  border-radius: 50%; /* Ekdum gol (round) shape ke liye */
+  font-size: 24px;
   font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Thoda 3D shadow effect */
+  transition: 0.3s ease-in-out;
 }
 
 #backToTopBtn:hover {
   background-color: #0056b3;
+  transform: translateY(-3px); /* Hover karne par thoda upar jump karega */
 }
+/* backtotop */
 
 * {
   box-sizing: border-box;
