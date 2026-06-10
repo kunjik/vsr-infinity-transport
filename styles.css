@@ -13,6 +13,24 @@
   --shadow: 0 20px 55px rgba(16, 32, 51, 0.12);
 }
 
+#backToTopBtn {
+  display: none; /* Shuru mein chupa rahega */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #007bff; /* Aap apne theme ke hisaab se color badal sakte hain */
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#backToTopBtn:hover {
+  background-color: #0056b3;
+}
+
 * {
   box-sizing: border-box;
 }
