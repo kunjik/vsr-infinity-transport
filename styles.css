@@ -865,3 +865,12 @@ h3 {
     text-align: center;
   }
 }
+
+
+/* Mobile screens ke liye special setting */
+@media screen and (max-width: 768px) {
+  #backToTopBtn {
+    bottom: 140px; /* Phone pe isko thoda aur hawa me utha diya */
+    right: 15px;
+  }
+}
