@@ -14,28 +14,31 @@
 }
 /* backtotop */
 #backToTopBtn {
-  display: none; 
+  display: none; /* JavaScript scroll par isse dikhayega */
   position: fixed;
-  bottom: 90px; /* WhatsApp ke upar shift karne ke liye */
+  bottom: 100px; /* WhatsApp ke standard position se upar */
   right: 20px;
-  z-index: 99;
-  background-color: #007bff; /* Aap color change kar sakte hain */
-  color: white;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  line-height: 45px; /* Arrow ko center me rakhne ke liye */
-  border-radius: 50%; /* Ekdum gol (round) shape ke liye */
-  font-size: 24px;
-  font-weight: bold;
+  z-index: 99; /* Isse sabse upar rakhne ke liye */
+  background-color: #f0f0f0; /* Aapki di hui photo jaisa halka color */
+  color: #333; /* Dark gray arrow ke liye */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Perfect gol (circular) shape */
+  border: 1px solid #ddd; /* Subtle border decoration ke liye */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Thoda drop-shadow elevation ke liye */
+  
+  /* Icon ko center me align karne ke liye magic lines */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Thoda 3D shadow effect */
   transition: 0.3s ease-in-out;
 }
 
 #backToTopBtn:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px); /* Hover karne par thoda upar jump karega */
+  background-color: #e0e0e0;
+  transform: translateY(-3px); /* Hover par halka sa jump efffect */
 }
 /* backtotop */
 
