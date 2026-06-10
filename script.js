@@ -19,16 +19,24 @@ navLinks.forEach((link) => {
   });
 });
 
-let topButton = document.getElementById("backToTopBtn");
+// back to top
 
-// Scroll hone par ye function chalega
+let mybutton = document.getElementById("backToTopBtn");
+
+// Scroll karne par button dikhao
 window.onscroll = function() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    topButton.style.display = "block"; // Button dikhao
-  } else {
-    topButton.style.display = "none";  // Button chupao
-  }
+  scrollFunction();
 };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "flex"; // CSS flex center ke liyezaruri hai, 'block' na karein
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// back to top
 
 quoteForm.addEventListener("submit", (event) => {
   event.preventDefault();
